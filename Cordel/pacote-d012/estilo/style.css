@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --cor01:#f1afc4;
+    --cor02:#F59BB7;
+    --cor03:#ee80a3;
+    --cor04:#f35b8b;
+
+    --cor05:#f3de74;
+    --cor06:#fde152;
+    --cor07:#FFD300;
+    
+    --cor08:#865239;
+    --cor09:#6e3b21;
+    --cor10:#522b18;
+
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Luxurious Roman", serif;
+}
+
+
+html, body {
+  min-height: 100vh;
+  background-color: var(--cor01);
+  font-family: var(--fonte1);
+}
+
+header {
+  background-image: linear-gradient(to bottom, var(--cor01), var(--cor03), var(--cor04));
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.308);
+  box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.575);
+}
+
+header > h1 {
+  padding-top: 50px;
+  font-variant: small-caps;
+  font-size: 5vw;
+}
+
+header > p {
+  padding-bottom: 50px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  line-height: 2em;
+  font-weight: bold;
+  padding-left: 30px;
+  font-size: 2.7vw;
+  padding-right: 30px;
+}
+
+section.normal {
+  background-color: white;
+  color: black;
+  box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.466);
+}
+
+section.imagem {
+  background-color: rgb(70, 70, 70);
+  color: white;
+  box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.466);
+}
+
+section.imagem > p {
+  display: inline-block;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.247);
+
+}
+
+section#img00 {
+  background-image: url('../imagens/tulipa-roxa-no-campo-ao-por-sol.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+section#img01 {
+  background-image: url('../imagens/buque-de-tulipas-grandes-na-mesa-de-rosa.jpg');
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+section > p {
+  padding-bottom: 2em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.233);
+}
+
+main p {
+  font-family: var(--fonte2);
+}
+
+footer {
+  background-color: var(--cor03);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
