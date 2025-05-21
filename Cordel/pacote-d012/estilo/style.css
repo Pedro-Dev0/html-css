@@ -99,7 +99,7 @@ section#img00 {
 
 section#img01 {
   background-image: url('../imagens/otimizi.jpg');
-  background-position: top center;
+  background-position: top top;
   background-size: cover;
   background-attachment: fixed;
   
