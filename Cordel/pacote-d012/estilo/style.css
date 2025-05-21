@@ -5,33 +5,33 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-/* Variáveis */
 :root {
-  --cor01:#f1afc4;
-  --cor02:#F59BB7;
-  --cor03:#ee80a3;
-  --cor04:#f35b8b;
-  --cor05:#f3de74;
-  --cor06:#fde152;
-  --cor07:#FFD300;
-  --cor08:#865239;
-  --cor09:#6e3b21;
-  --cor10:#522b18;
-  --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-  --fonte2: "Luxurious Roman", serif;
+    --cor01:#f1afc4;
+    --cor02:#F59BB7;
+    --cor03:#ee80a3;
+    --cor04:#f35b8b;
+
+    --cor05:#f3de74;
+    --cor06:#fde152;
+    --cor07:#FFD300;
+    
+    --cor08:#865239;
+    --cor09:#6e3b21;
+    --cor10:#522b18;
+
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Luxurious Roman", serif;
 }
 
-/* Geral */
+
 html, body {
   min-height: 100vh;
   background-color: var(--cor01);
   font-family: var(--fonte1);
 }
 
-/* Cabeçalho */
 header {
   background-image: linear-gradient(to bottom, var(--cor01), var(--cor03), var(--cor04));
   text-align: center;
@@ -60,78 +60,60 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Seções gerais */
 section {
   padding-top: 15vh;
   padding-bottom: 15vh;
   line-height: 2em;
   font-weight: bold;
   padding-left: 30px;
-  padding-right: 30px;
   font-size: 2.7vw;
+  padding-right: 30px;
 }
 
-/* Normal */
 section.normal {
   background-color: white;
   color: black;
-  /* sombra leve, se desejar */
+  box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.466);
 }
 
-/* Imagem - fundo com imagens corretas */
 section.imagem {
   background-color: rgb(70, 70, 70);
   color: white;
+  box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.466);
 }
 
-/* Texto dentro de seção imagem */
 section.imagem > p {
   display: inline-block;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.247);
+
 }
 
-/* Background com imagens específicas */
-@media (min-width: 768px) {
-  section#img00 {
-    background-image: url('../imagens/otimizado2.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  section#img01 {
-    background-image: url('../imagens/otimizi.jpg');
-    background-position: top center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
+section#img00 {
+  background-image: url('../imagens/otimizado2.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
-/* Mobile: evita background-attachment fix para performance */
-@media (max-width: 767px) {
-  section#img00,
-  section#img01 {
-    background-attachment: scroll; /* melhora desempenho nas telas menores */
-  }
-  /* sombra leve em mobile */
-  section.normal,
-  section.imagem {
-    box-shadow: none;
-  }
+section#img01 {
+  background-image: url('../imagens/otimizi.jpg');
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  
 }
 
-/* Parágrafos */
 section > p {
   padding-bottom: 2em;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.233);
 }
 
-/* Fontes específicas em main */
 main p {
   font-family: var(--fonte2);
 }
 
-/* Rodapé */
 footer {
   background-color: var(--cor03);
   color: white;
