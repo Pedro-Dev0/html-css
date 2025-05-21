@@ -94,13 +94,13 @@ section.imagem > p {
 /* Background com imagens específicas */
 @media (min-width: 768px) {
   section#img00 {
-    background-image: url('../imagens/tulipa-roxa-no-campo-ao-por-sol.jpg');
+    background-image: url('../imagens/otimizado2.jpg');
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
   }
   section#img01 {
-    background-image: url('../imagens/buque-de-tulipas-grandes-na-mesa-de-rosa.jpg');
+    background-image: url('../imagens/otimizi.jpg');
     background-position: top center;
     background-size: cover;
     background-attachment: fixed;
